@@ -1,6 +1,0 @@
-- name: OS upgrade
-  ansible.builtin.apt:
-    update_cache: yes
-    upgrade: dist
-    autoclean: yes
-    autoremove: yes

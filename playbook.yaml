@@ -1,4 +1,6 @@
-- name: My first play
+- name: Playbook
   hosts: all
+  become: true
+  become_user: root
   roles:
-    - { role: update, become: yes }
+    - role: upgrade

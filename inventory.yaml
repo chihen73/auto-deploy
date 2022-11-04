@@ -3,12 +3,9 @@ all:
     mn-1:
       ansible_connection: ssh
       ansible_host: 35.229.189.254
-      ansible_port: 22
     mn-2:
       ansible_connection: ssh
       ansible_host: 35.236.167.28
-      ansible_port: 22
     mn-3:
       ansible_connection: ssh
       ansible_host: 35.234.48.78
-      ansible_port: 22
