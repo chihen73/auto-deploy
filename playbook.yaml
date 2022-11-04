@@ -1,5 +1,5 @@
 - name: Playbook
-  hosts: all
+  hosts: mn-1
   become: true
   become_user: root
   roles:
