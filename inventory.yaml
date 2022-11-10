@@ -1,3 +1,5 @@
+---
+
 all:
   hosts:
     mn-1:
@@ -9,3 +11,5 @@ all:
     mn-3:
       ansible_connection: ssh
       ansible_host: 35.234.48.78
+
+...

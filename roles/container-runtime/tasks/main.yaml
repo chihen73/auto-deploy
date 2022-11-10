@@ -1,3 +1,5 @@
+---
+
 - name: Swapoff
   ansible.builtin.shell: 
     swapoff -a
@@ -9,5 +11,7 @@
 - name: Br_netfilter
   ansible.builtin.shell: modprobe br_netfilter
 
-- name: Sysctl reboot
+- name: Sysctl reboot  
   ansible.builtin.shell: sysctl --system
+
+...
