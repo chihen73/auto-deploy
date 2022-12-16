@@ -2,14 +2,41 @@
 
 all:
   hosts:
-    mn-1:
+    master-01:
       ansible_connection: ssh
-      ansible_host: 35.221.207.21
-    mn-2:
+      ansible_host: 192.168.216.11
+    master-02:
       ansible_connection: ssh
-      ansible_host: 35.236.167.28
-    mn-3:
+      ansible_host: 192.168.216.12
+    master-03:
       ansible_connection: ssh
-      ansible_host: 35.234.48.78
-
+      ansible_host: 192.168.216.13
+    worker-01:
+      ansible_connection: ssh
+      ansible_host: 192.168.216.31
+    worker-02:
+      ansible_connection: ssh
+      ansible_host: 192.168.216.32
+    worker-03:
+      ansible_connection: ssh
+      ansible_host: 192.168.216.33
+    worker-04:
+      ansible_connection: ssh
+      ansible_host: 192.168.216.34
+    worker-05:
+      ansible_connection: ssh
+      ansible_host: 192.168.216.35
+  children:
+    A-Part:
+      hosts:
+        master-01:
+        worker-01:
+        worker-03:
+        worker-05:
+    B-Part:
+      hosts:
+        master-02:
+        master-03:
+        worker-02:
+        worker-04:
 ...

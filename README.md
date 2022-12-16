@@ -1,2 +1,3 @@
-### Ansible 自動部署測試
-#### 2022.11.28 update
+### Ansible IaC 學習
+#### 2022.12.16 update
+* 使用-ask-become-pass參數進行權限提升

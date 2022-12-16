@@ -1,0 +1,9 @@
+---
+- name: Playbook
+  hosts: A-Part
+  become: true
+  become_user: root
+  tasks:
+    - name: OS reboot
+      ansible.builtin.reboot:
+...
